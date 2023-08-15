@@ -1,0 +1,10 @@
+package myapp;
+
+public class Test {
+	public static void main(String[] args) {
+	
+	}
+	 public static boolean isFullWidthSpaceOnly(String input) {
+	        return input.matches("[　]+");
+	    }
+}
