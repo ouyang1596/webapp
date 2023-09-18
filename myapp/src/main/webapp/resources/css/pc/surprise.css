@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+#newyear{
+	background-size: 2800px auto;
+	background-color: #ffdda7 !important ;}
+#newyear .e_container{margin-top: 86px;}
+#newyear .header{background-color: #E10015;}
+#newyear .nav>ul>li>a{color:#fff;}
+#newyear .nav>ul>li>a:after{background: #E10015;}
+#newyear .nav>ul>li>a:hover:after, #newyear .nav>ul>li.active>a:after{background: #fff;}
+#newyear .nav_login>ul>li, #newyear .nav_login>ul>li>a{color: #fff;}
+#newyear .nav_login .account a{color: #fff;}
+
+
+/* background: url("../../../resources/image/surprise/guoqing.jpg") no-repeat center 60px; */
+
+
+
+

@@ -1,0 +1,88 @@
+.harame-dialog {
+	position: fixed;
+	z-index: 1001;
+	width: 460px;
+	border: none;
+	border-radius:3px;
+	background-color: white;
+	overflow: hidden;
+	display: none;
+}
+
+.harame-dialog-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.5;
+	filter:Alpha(opacity=50);
+	z-index: 1000;
+}
+
+.harame-file-upload-iframe {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+.harame-file-upload-form {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+.harame-file-upload-loading {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	opacity: 0.3;
+	background-color: #FFFFFF;
+	z-index: 2000;
+	display: table;
+}
+
+.harame-file-upload_loading-message {
+	vertical-align: middle;
+	display: table-cell;
+	color:#303030;
+}
+
+.harame-tooltip {
+	background: #FFFFFF;
+	border: 1px solid #E1E1E1;
+}
+
+.harame-slider-image-container {
+	position: absolute;
+}
+
+.harame-slider-previous {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.harame-slider-next {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.harame-slider-pagination {
+	position: absolute;
+	width: 100px;
+	height: 30px;
+}
+
+.harame-slider-pagination-page {
+	float: left;
+	width: 30px;
+	height: 30px;
+}

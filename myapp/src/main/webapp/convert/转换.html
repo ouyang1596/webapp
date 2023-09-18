@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<span class="simple-span">原内容</span>
+		<textarea id="input1" class="area-input"></textarea>
+		<button class="btn" onclick="convert()">转换</button>
+		<br>
+		<a class="simple-span">输出内容</a>
+		<textarea id="output1" class="area-input"></textarea>
+
+
+	</body>
+	<style>
+	.simple-span{
+		display:inline-block;
+		width: 5rem;
+	}
+	.area-input{
+		display:inline-block;
+		width: 30rem;
+		height: 10rem;
+	}
+	.btn{
+		width: 3rem;
+		height: 2rem;
+	}
+	</style>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	
+<script src="js/md5.min.js"></script>
+	<script>
+	function convert(){
+		$("#output1").val("")
+		var oriData=$("#input1").val();
+		var jsonD=JSON.parse(oriData);
+		var time=jsonD.time;
+		console.log(time);
+		delete jsonD.time;
+		delete jsonD.md5;
+		var jsonData=JSON.stringify(jsonD);
+		var result=md5(md5(jsonData)+"liaobatealib_xxx"+time);
+		console.log(result);
+		jsonD.time=time;
+		jsonD.md5=result;
+		$("#output1").val(JSON.stringify(jsonD));
+	}
+	</script>
+</html>

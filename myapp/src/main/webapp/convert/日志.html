@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<span class="simple-span">原内容</span>
+		<textarea id="input1" class="area-input"></textarea>
+		<button class="btn" onclick="convert()">转换</button>
+		<br>
+
+		<span id="output1" class="area-input2"></span>
+
+
+	</body>
+	<style>
+	.simple-span{
+		display:inline-block;
+		width: 5rem;
+	}
+	.area-input{
+		display:inline-block;
+		width: 30rem;
+		height: 10rem;
+	}
+	.area-input2{
+		display:inline-block;
+		margin-left:10rem;
+		width: 100rem;
+		height: 10rem;
+	}
+	.btn{
+		width: 3rem;
+		height: 2rem;
+	}
+	</style>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+	<script>
+	function convert(){
+		$("#output1").val("")
+		var oriData=$("#input1").val();
+		var arr=oriData.split("\n");
+		var res="";
+		var last=0;
+		arr.forEach(function (value){
+		 var timeArr=value.split(" : ");
+		 if(timeArr.length>=2){
+		 var key=timeArr[0];
+		 var time=timeArr[1];
+		 var d=parseInt(time)-last;
+		 var timeDate=new Date(parseInt(time)).toLocaleString();		 
+		 res=res+(key+"  "+timeDate+" "+(time%1000)+"ms "+"  与上次请求的间隔 ："+d+" ms "+"<br>");
+		 last=parseInt(time);
+		 }
+		 
+		});
+		$("#output1").html(res);
+	}
+	</script>
+</html>

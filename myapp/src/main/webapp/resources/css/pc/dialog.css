@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+.dialog_div{display: none;}
+.dialog_div .title{height: 40px;line-height: 40px;text-align: left;font-size: 16px;text-indent: 10px;
+    color:#333;background-color: #fff;border-bottom: 1px solid #eee;position: relative;}
+.dialog_div .title .closed{display: block;width: 20px;height: 20px;position: absolute;right:10px;top:10px;
+    background:url("../../../resources/image/pc/delete_icon2.png") no-repeat center center;background-size:12px 12px;
+    cursor: pointer;}
+.dialog_div .title .closed:hover{background:url("../../../resources/image/pc/delete_icon2_hover.png") no-repeat center center;background-size:12px 12px;}
+.dialog_div>div{width: 400px;margin: 50px auto 30px;}
+.dialog_div .normal_input{display: block;width: 100%;height: 35px;line-height: 35px;margin-top:15px;}
+.dialog_div .normal_input:disabled{background-color: #eee;color:#909090;}
+.dialog_div .normal_textarea{display: block;width: 100%;margin-top:15px;}
+.dialog_div .normal_textarea:disabled{background-color: #eee;color:#909090;}
+.dialog_div .normal_select{display: block;width: 100%;margin-top:15px;height: 37px;line-height: 37px;}
+.dialog_div .normal_select:disabled{background-color: #eee;color:#909090;}
+
+.dialog_div .confirm{text-align: center;}
+.dialog_div .opt_p{overflow: hidden;margin: 50px auto;}
+.dialog_div .opt_p .btn{width: 140px;}
+.dialog_div .login_opt{height: 25px;line-height: 25px;margin-top:10px;}
+.dialog_div .login_opt a{cursor: pointer;color: #abcd05;font-size: 12px;}
+.dialog_div .login_opt a:hover{text-decoration: underline;color: #666600;}
+
+.dialog_div .warn{margin: 10px 0px;}
+
+.dialog_w600{width:600px;}
+.dialog_w600>div{width:540px;}
+.dialog_w600 .normal_input{width: 380px;}
+.dialog_w600 .normal_select{width: 384px;}
+.dialog_w600 .normal_textarea{width: 374px;}
+.dialog_w600 .opt_p{width: 350px;}
+.dialog_div .select_div{float: left;width: 260px;}
+
+.dialog_div .elem{margin-top: 15px;clear: both;overflow: hidden;}
+.dialog_div .elem>label{float: left;width: 90px;height: 26px;line-height: 26px;text-align: right;margin-right: 20px;color: #767676;}
+.dialog_div .elem>.normal_input, .dialog_div .elem>.normal_textarea{margin-top: 0;}
+
+
